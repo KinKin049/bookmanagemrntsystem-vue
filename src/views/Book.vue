@@ -14,11 +14,14 @@
       <el-button type="success">导出</el-button>
     </el-card>
     <el-card>
-      <el-table :data="data.tableData" stripe>
+      <el-table :data="data.books" stripe>
         <el-table-column label="ID" prop="id"></el-table-column>
-        <el-table-column label="日期" prop="date"></el-table-column>
         <el-table-column label="名称" prop="name"></el-table-column>
-        <el-table-column label="地址" prop="address"></el-table-column>
+        <el-table-column label="价格" prop="price"></el-table-column>
+        <el-table-column label="类别" prop="category"></el-table-column>
+        <el-table-column label="ISBN" prop="isbn"></el-table-column>
+        <el-table-column label="出版时间" prop="time"></el-table-column>
+        <el-table-column label="出版社" prop="press"></el-table-column>
       </el-table>
     </el-card>
     <div>
